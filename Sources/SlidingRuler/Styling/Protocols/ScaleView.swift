@@ -50,6 +50,8 @@ extension ScaleView {
         shape
             .frame(size: .init(width: width, height: height))
             .fixedSize()
+            .foregroundColor(.blue)
+            .background(Color.orange)
     }
 
     var unitMarkOffset: CGFloat { 0 }
