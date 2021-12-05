@@ -152,6 +152,7 @@ public struct SlidingRuler<V>: View where V: BinaryFloatingPoint, V.Stride: Bina
                     .equatable()
                     .animation(nil)
                     .modifier(InfiniteOffsetEffect(offset: renderedOffset, maxOffset: self.cellWidthOverflow))
+                    .foregroundColor(.blue)
                 self.style.makeCursorBody()
             }
         }
