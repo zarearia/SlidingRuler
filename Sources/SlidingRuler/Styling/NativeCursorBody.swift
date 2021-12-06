@@ -41,7 +41,7 @@ open class ColorProperties: ObservableObject {
     
 }
 
-let colorProperties = ColorProperties(cursorColor: .red, scaleBackgroundColor: Color.clear, scaleForegroundColor: Color.black)
+public let colorProperties = ColorProperties(cursorColor: .red, scaleBackgroundColor: Color.clear, scaleForegroundColor: Color.black)
 
 public struct NativeCursorBody: View {
     public var body: some View {
