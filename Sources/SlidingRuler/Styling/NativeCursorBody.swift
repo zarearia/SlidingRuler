@@ -28,10 +28,25 @@
 
 import SwiftUI
 
+open class ColorProperties: ObservableObject {
+    @Published public var cursorColor: Color
+    @Published public var scaleBackgroundColor: Color
+    @Published public var scaleForegroundColor: Color
+    
+    public init(cursorColor: Color, scaleBackgroundColor: Color, scaleForegroundColor: Color) {
+        self.cursorColor = cursorColor
+        self.scaleBackgroundColor = scaleBackgroundColor
+        self.scaleForegroundColor = scaleForegroundColor
+    }
+    
+}
+
+let colorProperties = ColorProperties(cursorColor: .red, scaleBackgroundColor: Color.clear, scaleForegroundColor: Color.black)
+
 public struct NativeCursorBody: View {
     public var body: some View {
         Capsule()
-            .foregroundColor(.brown)
+            .foregroundColor(colorProperties.cursorColor)
             .frame(width: UIScreen.main.scale == 3 ? 1.8 : 2, height: 30)
     }
 }
