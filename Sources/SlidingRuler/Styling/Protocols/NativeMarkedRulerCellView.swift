@@ -43,8 +43,8 @@ extension NativeMarkedRulerCellView {
             Text(verbatim: displayMark)
                 .font(Font.footnote.monospacedDigit())
 //                .foregroundColor(markColor)
-                .background(Color.blue)
-                .foregroundColor(.red)
+//                .background(Color.blue)
+                .foregroundColor(colorProperties.scrollingTextColor)
                 .lineLimit(1)
         }
         .fixedSize()

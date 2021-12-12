@@ -32,11 +32,13 @@ open class ColorProperties: ObservableObject {
     @Published public var cursorColor: Color
     @Published public var scaleBackgroundColor: Color
     @Published public var scaleForegroundColor: Color
+    @Published public var scrollingTextColor: Color
     
-    public init(cursorColor: Color, scaleBackgroundColor: Color, scaleForegroundColor: Color) {
+    public init(cursorColor: Color, scaleBackgroundColor: Color, scaleForegroundColor: Color, scrollingTextColor: Color) {
         self.cursorColor = cursorColor
         self.scaleBackgroundColor = scaleBackgroundColor
         self.scaleForegroundColor = scaleForegroundColor
+        self.scrollingTextColor = scrollingTextColor
     }
     
 }
