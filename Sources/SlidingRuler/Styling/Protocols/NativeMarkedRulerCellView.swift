@@ -42,7 +42,8 @@ extension NativeMarkedRulerCellView {
             Spacer()
             Text(verbatim: displayMark)
                 .font(Font.footnote.monospacedDigit())
-                .foregroundColor(markColor)
+//                .foregroundColor(markColor)
+                .foregroundColor(.red)
                 .lineLimit(1)
         }
         .fixedSize()
